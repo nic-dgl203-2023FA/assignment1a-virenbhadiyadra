@@ -18,7 +18,7 @@ img {
 a{
     color: #FFE66D;
 }
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -36,6 +36,16 @@ header{
 
 .projects{
     background: #F7FFF7;
+}
+.projects a{
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+.projects a:hover{
+    background: rgba(47, 48, 97, 80%);
 }
 
 
