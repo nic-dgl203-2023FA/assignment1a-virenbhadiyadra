@@ -21,6 +21,11 @@ a{
 a:hover {
     text-decoration: none;
 }
+.content-wrapper{
+    width: 900px;
+    margin: 0 auto;
+
+}
 
 /*profile
 ============================================================================*/
@@ -38,7 +43,7 @@ header{
     background: #F7FFF7;
 }
 .projects a{
-
+        color: #2F3061;
 }
 .projects .btn{
     color: #F7FFF7;
@@ -47,7 +52,7 @@ header{
     padding: 8px;
     border-radius: 4px;
 }
-.projects .btn:hover{
+.projects a:hover{
     background: rgba(47, 48, 97, 80%);
 }
 
