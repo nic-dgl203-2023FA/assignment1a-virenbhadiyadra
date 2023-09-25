@@ -4,7 +4,7 @@
     #343434 = dark grey
     #2F3061 = blue dark
     #FFE66D = yellow
-    #A1C607 = blue light
+    #A1C6D7 = blue light
     */
 
 /*Global style
@@ -27,10 +27,18 @@ header{
 /*project
 ============================================================================*/
 
+.projects{
+    background: #F7FFF7;
+}
+
 
 
 /*work experience
 ============================================================================*/
+
+.work-experience{
+    background: #A1C6D7;
+}
 
 
 /*education
