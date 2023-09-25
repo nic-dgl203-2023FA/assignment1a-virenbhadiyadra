@@ -1,22 +1,27 @@
 /*
     COLOR PALETTE
-
-    Dark Green #3c8453
-    Sandy Beige #bcaa96
-    Dark Gray #222222
-    Light Gray #d3d4d6
-    Off-White #f6f6f6
+    #F7FFF7 = almost White
+    #343434 = dark grey
+    #2F3061 = blue dark
+    #FFE66D = yellow
+    #A1C607 = blue light
     */
 
 /*Global style
 ===========================================================================*/
-
+body{
+    color: #343434;
+}
 img {
     width: 300px;
 }
 
 /*profile
 ============================================================================*/
+
+header{
+    background: #2F3061;
+}
 
 
 /*project
