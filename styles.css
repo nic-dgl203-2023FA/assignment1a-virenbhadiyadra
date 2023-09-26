@@ -83,13 +83,16 @@ header{
 .project-items{
     overflow: hidden;
     border-bottom: 1px dashed #343434;
+    padding: 25px 0;
 }
 
 .project-items img{
     float: left;
     margin-right: 20px;
 }
-
+.project-items h3{
+    margin-top: 0;
+}
 
 
 /*work experience
