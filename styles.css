@@ -80,9 +80,13 @@ header{
 .projects a:hover{
     background: rgba(47, 48, 97, 80%);
 }
+.project-items{
+    overflow: hidden;
+}
 
 .project-items img{
     float: left;
+    margin-right: 20px;
 }
 
 
