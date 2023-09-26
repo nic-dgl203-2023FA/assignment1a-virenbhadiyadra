@@ -81,6 +81,10 @@ header{
     background: rgba(47, 48, 97, 80%);
 }
 
+.project-items img{
+    float: left;
+}
+
 
 
 /*work experience
