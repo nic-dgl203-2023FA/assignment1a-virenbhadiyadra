@@ -41,7 +41,7 @@ header{
    
 }
 .divider > section{
-    border-bottom: 1px dashed #f7fff7;
+    border-bottom: 0.5px dashed #f7fff7;
     padding: 25px 0;
 }
 .divider > section:last-of-type {
@@ -78,4 +78,23 @@ header{
 
 .project-items h3{
     margin-top: 0;
+}
+/* work experience*/
+.work-experience{
+    background: #2b84ea;
+    background-color: rgba(43, 132, 234, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+}
+/*Education*/
+.education{
+    background: #2b84ea;
+    background-color: rgba(43, 132, 234, 0.2);
+    border-radius: 12px;
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p{
+    width: 60%;
 }
