@@ -14,6 +14,7 @@ body{
 }
 img {
     width: 300px;
+    border-radius: 8px;
 }
 h2{
     font-size: 45px;
@@ -38,4 +39,43 @@ header{
     background: #02042b;
     color: #F7FFF7;
    
+}
+.divider > section{
+    border-bottom: 1px dashed #f7fff7;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* Projects*/
+
+.projects{
+    background: #2b84ea;
+    background-color: rgba(43, 132, 234, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+}
+.projects a{
+        color: #F7FFF7;
+}
+.projects .btn{
+    color: #F7FFF7;
+    background: #2b84ea;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects a:hover{
+    background: rgba(90, 189, 154, 80%);
+}
+.project-items{
+    overflow: hidden;
+ 
+}
+
+
+.project-items h3{
+    margin-top: 0;
 }
