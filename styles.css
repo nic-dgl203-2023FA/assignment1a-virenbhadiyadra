@@ -1,0 +1,12 @@
+h2{
+    font-size: 45px;
+}
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+h1, h2{
+    font-family: 'caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
