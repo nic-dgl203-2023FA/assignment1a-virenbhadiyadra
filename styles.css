@@ -121,8 +121,10 @@ footer{
 .navbar {
 
     
-    background-color: #7fffd4; /* Background color of the navbar */
-    overflow: hidden; /* Hide content that overflows the navbar */
+    background-color: #7fffd4;
+    overflow: hidden; 
+    position: fixed;
+    width: 100%;
     
 }
 
