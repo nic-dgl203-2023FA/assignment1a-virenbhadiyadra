@@ -3,6 +3,9 @@ html{
 }
 *, *:before, *:after{
     box-sizing: inherit;
+}
+a{
+    color: aquamarine;
 } 
 body{
     color: #000000;
@@ -57,7 +60,7 @@ header{
     padding: 30px;
 }
 .projects a{
-        color: #F7FFF7;
+        color: aquamarine;
 }
 .projects .btn{
     color: #F7FFF7;
@@ -97,4 +100,42 @@ header{
 }
 .education p{
     width: 60%;
+}
+/*Footer*/
+footer{
+    background: #041436;
+    color: #F7FFF7;
+    
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+/*Menu*/
+.navbar {
+
+    
+    background-color: #7fffd4; /* Background color of the navbar */
+    overflow: hidden; /* Hide content that overflows the navbar */
+    
+}
+
+.navbar a {
+    float: right; 
+    display: block; 
+    color: #041436;
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #2b84ea;
+    color: black; 
 }
