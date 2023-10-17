@@ -274,3 +274,24 @@ footer{
       .flip-word:hover {
         transform: rotateX(180deg);
       }
+
+          /* Base styles for the animated square */
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        position: relative;
+        animation: moveWithCubicBezier 3s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+      }
+  
+      @keyframes moveWithCubicBezier {
+        0% {
+          left: 0;
+        }
+        50% {
+          left: 50%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
