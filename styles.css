@@ -164,3 +164,20 @@ footer{
     padding: 20px;
     text-align: center;
   }
+
+      /* Base styles for the button */
+      .custom-button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        border: 2px solid #3498db;
+        cursor: pointer;
+        transition: background-color 0.3s, font-size 0.5s, border-color 0.4s;
+      }
+  
+      /* Hover state styles for the button */
+      .custom-button:hover {
+        background-color: #e74c3c;
+        font-size: 24px;
+        border-color: #e74c3c;
+      }
