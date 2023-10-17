@@ -259,3 +259,18 @@ footer{
           border-color: #3498db;
         }
       }
+
+          /* Base styles for the flip animation */
+    .flip-container {
+        perspective: 1000px;
+        display: inline-block;
+      }
+  
+      .flip-word {
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease-in-out;
+      }
+  
+      .flip-word:hover {
+        transform: rotateX(180deg);
+      }
