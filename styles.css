@@ -141,3 +141,26 @@ footer{
     background-color: #2b84ea;
     color: black; 
 }
+
+/* Base styles for the grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+  }
+
+  /* Style for the grid items (for demonstration purposes) */
+  .grid-item {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+  }
