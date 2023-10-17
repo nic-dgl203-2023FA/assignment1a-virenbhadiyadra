@@ -228,3 +228,34 @@ footer{
           transform: translateX(0);
         }
       }
+
+       /* Base styles for the typing animation */
+    .typing-container {
+        text-align: center;
+      }
+  
+      .typing-text {
+        font-size: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #3498db;
+        animation: typing 3s steps(18) infinite, blinkCursor 1s steps(1) infinite;
+      }
+  
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+  
+      @keyframes blinkCursor {
+        0%, 100% {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #3498db;
+        }
+      }
