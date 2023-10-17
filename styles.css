@@ -181,3 +181,50 @@ footer{
         font-size: 24px;
         border-color: #e74c3c;
       }
+
+          /* Base styles for the word */
+    .resizable-word {
+        font-size: 24px;
+        transition: font-size 0.5s;
+      }
+  
+      /* Hover state styles for the word */
+      .resizable-word:hover {
+        font-size: 18px;
+      }
+
+       /* Base styles for the container */
+    .svg-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      /* SVG image styles */
+      .svg-image {
+        width: 50px;
+        height: 50px;
+        fill: #3498db;
+        transition: transform 2s linear;
+      }
+  
+      /* Hover state styles for the SVG image */
+      .svg-container:hover .svg-image {
+        animation: moveBackAndForth 4s linear infinite;
+      }
+  
+      @keyframes moveBackAndForth {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(90vw);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
