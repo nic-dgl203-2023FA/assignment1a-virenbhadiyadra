@@ -27,3 +27,20 @@
   #animated-rect {
     animation: rotate 3s linear infinite;
   }
+
+  @keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Apply the flash animation to the SVG element */
+#flashing-svg {
+    animation: flash 1s infinite;
+}
