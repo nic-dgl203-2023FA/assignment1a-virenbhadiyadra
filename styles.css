@@ -77,3 +77,23 @@
 #rotating-svg {
     animation: rotate 4s infinite linear;
 }
+
+@keyframes resize {
+    0% {
+        transform-origin: center;
+        transform: scale(1);
+    }
+    50% {
+        transform-origin: center;
+        transform: scale(1.5);
+    }
+    100% {
+        transform-origin: center;
+        transform: scale(1);
+    }
+}
+
+/* Apply the resize animation to the SVG element */
+#resizing-svg {
+    animation: resize 4s infinite linear;
+}
