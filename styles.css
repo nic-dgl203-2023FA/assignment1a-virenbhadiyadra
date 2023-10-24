@@ -97,3 +97,26 @@
 #resizing-svg {
     animation: resize 4s infinite linear;
 }
+
+:root {
+    --text-content: "viren";
+}
+
+.animated-text {
+    display: inline-block;
+    font-size: 24px;
+    animation: text-animation 4s infinite;
+}
+
+.text-var::before {
+    content: var(--text-content);
+}
+
+@keyframes text-animation {
+    0%, 100% {
+        --text-content: "viren";
+    }
+    50% {
+        --text-content: "Animated";
+    }
+}
