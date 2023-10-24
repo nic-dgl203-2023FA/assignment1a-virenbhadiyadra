@@ -61,3 +61,19 @@
 #moving-svg {
     animation: move 4s infinite;
 }
+
+@keyframes rotate {
+    0% {
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the rotate animation to the SVG element */
+#rotating-svg {
+    animation: rotate 4s infinite linear;
+}
