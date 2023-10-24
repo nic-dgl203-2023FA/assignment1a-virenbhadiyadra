@@ -1,0 +1,422 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+a{
+    color: aquamarine;
+} 
+body{
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+    border-radius: 8px;
+}
+h2{
+    font-size: 45px;
+}
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+h1, h2{
+    font-family: 'Poppins', bold;
+    font-weight: 400;
+    margin: 0;
+}
+.content-wrapper{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+
+}
+header{
+    background: #02042b;
+    color: #F7FFF7;
+   
+}
+.divider > section{
+    border-bottom: 0.5px dashed #f7fff7;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* Projects*/
+
+.projects{
+    background: #2b84ea;
+    background-color: rgba(43, 132, 234, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+}
+.projects a{
+        color: aquamarine;
+}
+.projects .btn{
+    color: #F7FFF7;
+    background: #2b84ea;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects a:hover{
+    background: rgba(90, 189, 154, 80%);
+}
+.project-items{
+    overflow: hidden;
+ 
+}
+
+
+.project-items h3{
+    margin-top: 0;
+}
+/* work experience*/
+.work-experience{
+    background: #2b84ea;
+    background-color: rgba(43, 132, 234, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+}
+/*Education*/
+.education{
+    background: #2b84ea;
+    background-color: rgba(43, 132, 234, 0.2);
+    border-radius: 12px;
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p{
+    width: 60%;
+}
+/*Footer*/
+footer{
+    background: #041436;
+    color: #F7FFF7;
+    
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+/*Menu*/
+.navbar {
+
+    
+    background-color: #7fffd4;
+    overflow: hidden; 
+    position: fixed;
+    width: 100%;
+    
+}
+
+.navbar a {
+    float: right; 
+    display: block; 
+    color: #041436;
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #2b84ea;
+    color: black; 
+}
+
+/* Base styles for the grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+  }
+
+  /* Style for the grid items (for demonstration purposes) */
+  .grid-item {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+  }
+
+      /* Base styles for the button */
+      .custom-button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        border: 2px solid #3498db;
+        cursor: pointer;
+        transition: background-color 0.3s, font-size 0.5s, border-color 0.4s;
+      }
+  
+      /* Hover state styles for the button */
+      .custom-button:hover {
+        background-color: #e74c3c;
+        font-size: 24px;
+        border-color: #e74c3c;
+      }
+
+          /* Base styles for the word */
+    .resizable-word {
+        font-size: 24px;
+        transition: font-size 0.5s;
+      }
+  
+      /* Hover state styles for the word */
+      .resizable-word:hover {
+        font-size: 18px;
+      }
+
+       /* Base styles for the container */
+    .svg-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      /* SVG image styles */
+      .svg-image {
+        width: 50px;
+        height: 50px;
+        fill: #3498db;
+        transition: transform 2s linear;
+      }
+  
+      /* Hover state styles for the SVG image */
+      .svg-container:hover .svg-image {
+        animation: moveBackAndForth 4s linear infinite;
+      }
+  
+      @keyframes moveBackAndForth {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(90vw);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+       /* Base styles for the typing animation */
+    .typing-container {
+        text-align: center;
+      }
+  
+      .typing-text {
+        font-size: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #3498db;
+        animation: typing 3s steps(18) infinite, blinkCursor 1s steps(1) infinite;
+      }
+  
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+  
+      @keyframes blinkCursor {
+        0%, 100% {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #3498db;
+        }
+      }
+
+          /* Base styles for the flip animation */
+    .flip-container {
+        perspective: 1000px;
+        display: inline-block;
+      }
+  
+      .flip-word {
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease-in-out;
+      }
+  
+      .flip-word:hover {
+        transform: rotateX(180deg);
+      }
+
+          /* Base styles for the animated square */
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        position: relative;
+        animation: moveWithCubicBezier 3s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+      }
+  
+      @keyframes moveWithCubicBezier {
+        0% {
+          left: 0;
+        }
+        50% {
+          left: 50%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+
+/*ANIMATION PAGE CSS*/
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to the circle */
+#circle {
+    animation: scaleAnimation 3s infinite;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #animated-rect {
+    animation: rotate 3s linear infinite;
+  }
+
+  @keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Apply the flash animation to the SVG element */
+#flashing-svg {
+    animation: flash 1s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the move animation to the SVG element */
+#moving-svg {
+    animation: move 4s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the rotate animation to the SVG element */
+#rotating-svg {
+    animation: rotate 4s infinite linear;
+}
+
+@keyframes resize {
+    0% {
+        transform-origin: center;
+        transform: scale(1);
+    }
+    50% {
+        transform-origin: center;
+        transform: scale(1.5);
+    }
+    100% {
+        transform-origin: center;
+        transform: scale(1);
+    }
+}
+
+/* Apply the resize animation to the SVG element */
+#resizing-svg {
+    animation: resize 4s infinite linear;
+}
+
+:root {
+    --text-content: "viren";
+}
+
+.animated-text {
+    display: inline-block;
+    font-size: 24px;
+    animation: text-animation 4s infinite;
+}
+
+.text-var::before {
+    content: var(--text-content);
+}
+
+@keyframes text-animation {
+    0%, 100% {
+        --text-content: "viren";
+    }
+    50% {
+        --text-content: "Animated";
+    }
+}
